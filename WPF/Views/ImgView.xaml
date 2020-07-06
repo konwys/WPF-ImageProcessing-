@@ -1,0 +1,17 @@
+﻿<Window x:Class="WPF.Views.ImgView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.Views"
+        mc:Ignorable="d"
+        Title="ImgView" Height="450" Width="800">
+    <StackPanel>
+        <WrapPanel Margin="10" HorizontalAlignment="Center">
+            <Button x:Name="browse" MinHeight="50" MinWidth="100" Command="{Binding LoadImageCommand}" Margin="0,0,20,0" Click="browse_Click">Browse</Button>
+            <Button x:Name="save" MinHeight="50" MinWidth="100" Margin="0,0,20,0">Save</Button>
+            <Button x:Name="transform" MinHeight="50" MinWidth="100" Margin="0,0,20,0" Click="transform_Click">Transform</Button>
+        </WrapPanel>
+        <Image x:Name="imgview" Source="{Binding ImagePath}" Margin="10" Stretch="Fill"  />
+    </StackPanel>
+</Window>
