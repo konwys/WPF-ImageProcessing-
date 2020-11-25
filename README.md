@@ -1,6 +1,6 @@
 # WPF-ImageProcessing
 ### Cel projektu : 
-#### przetwarzanie obrazu zgodnie z regułą :
+#### przetwarzanie obrazu zgodnie z regułą:
 - rozkładamy kolor bieżącego pixela na składowe (R, G, B)
 - wybieramy największą z trzech liczb R, G i B
 - jeżeli w poprzednim kroku wybraliśmy:
